@@ -4,6 +4,16 @@ This simple app is a stopwatch app developed with Angular and Electron.
 
 The template was taken from here: https://github.com/maximegris/angular-electron
 
+## Screenshots
+
+### Timer Running
+
+![alt tag](https://github.com/pawelpaszki/ng-electron-timer/blob/screenshots/screenshots/screenshot1.png)
+
+### Timer Paused
+
+![alt tag](https://github.com/pawelpaszki/ng-electron-timer/blob/screenshots/screenshots/screenshot2.png)
+
 ## Getting Started
 
 Clone this repository locally :
