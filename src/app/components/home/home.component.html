@@ -1,23 +1,23 @@
-<div style="height: 100%; display: flex; flex-direction: column; align-items: stretch;">
-  <div style="display: flex; flex-direction: row; width: 100%; flex-grow: 1; display: flex; align-items: center; justify-content: center;">
+<div class="container">
+  <div class="timerContainer">
     <div style="flex: 1;">
     </div>
-    <div style="flex: 8; color: orange; align-items: center; justify-content: center; text-align: center; font-size: 24px; font-weight: 700;">
-      abc
+    <div class="timer">
+      {{unitToDisplayString(hours)}}:{{unitToDisplayString(minutes)}}:{{unitToDisplayString(seconds)}}:{{unitToDisplayString(nms)}}
     </div>
     <div style="flex: 1">
     </div>
   </div>
-  <div style="display: flex; flex-direction: row; width: 100%; flex-shrink: 0;">
+  <div class="buttonsContainer">
     <div style="flex: 1;">
     </div>
-    <div style="flex: 4; display: flex; align-items: center; justify-content: center;" *ngIf="isPaused || isReset">
+    <div class="buttonSlot" *ngIf="isPaused || isReset">
       <button (click)="start()">Start</button>
     </div>
-    <div style="flex: 4; display: flex; align-items: center; justify-content: center;" *ngIf="!isPaused && !isReset">
+    <div class="buttonSlot" *ngIf="!isPaused && !isReset">
       <button (click)="pause()">Pause</button>
     </div>
-    <div style="flex: 4; display: flex; align-items: center; justify-content: center;" *ngIf="isPaused && !isReset">
+    <div class="buttonSlot" *ngIf="isPaused && !isReset">
       <button (click)="reset()">Reset</button>
     </div>
     <div style="flex: 1">
